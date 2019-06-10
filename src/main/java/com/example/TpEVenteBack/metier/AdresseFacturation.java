@@ -21,7 +21,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @Data
 @Entity //annotation de jpa
-@DiscriminatorValue("Prof")
+@DiscriminatorValue("AdreF")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @ToString(callSuper=true)
 public class AdresseFacturation extends Adresse implements Serializable {
