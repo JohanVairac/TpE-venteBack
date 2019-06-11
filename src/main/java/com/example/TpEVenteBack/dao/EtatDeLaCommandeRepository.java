@@ -6,6 +6,6 @@ import com.example.TpEVenteBack.metier.EtatDeLaCommande;
 
 
 
-public interface EtatDeLaCommandeRepository extends JpaRepository< EtatDeLaCommande,Long>{
+public interface EtatDeLaCommandeRepository  extends JpaRepository< EtatDeLaCommande,Long>{
 
 }
