@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.XmlTransient;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -49,4 +50,24 @@ public class Produit implements Serializable{
 	@ToString.Exclude
 	@ManyToMany
 	private List<Adresse> adresses=new ArrayList<Adresse>();
+	
+
+	@JsonIgnore
+	@XmlTransient
+	@ToString.Exclude
+	@OneToMany(mappedBy="produit")
+	private List<Promotion> promotions =new ArrayList<Promotion>();
+	
+	
+	@JsonIgnore
+	@XmlTransient
+	@ToString.Exclude
+	@OneToMany(mappedBy="produits")
+	private List<Client> clients =new ArrayList<Client>();
+	
+	
+	
+	
+	
+	
 }

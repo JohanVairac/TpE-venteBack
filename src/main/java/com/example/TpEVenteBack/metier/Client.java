@@ -1,10 +1,15 @@
 package com.example.TpEVenteBack.metier;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.xml.bind.annotation.XmlTransient;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
@@ -28,6 +33,11 @@ public class Client extends Personne implements Serializable {
 	}
 	private String email;
 	private String mdp;
-	
+
+	@JsonIgnore
+	@XmlTransient
+	@ToString.Exclude
+	@ManyToMany
+	private List<Produit> produits=new ArrayList<Produit>();
 
 }
