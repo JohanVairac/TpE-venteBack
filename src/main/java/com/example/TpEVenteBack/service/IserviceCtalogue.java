@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.TpEVenteBack.metier.Catalogue;
 
-public interface InterfaceCtalogue {
+public interface IserviceCtalogue {
 	
 	public Catalogue saveCatalogue(Catalogue c);
 	public List< Catalogue> listCatalogues();

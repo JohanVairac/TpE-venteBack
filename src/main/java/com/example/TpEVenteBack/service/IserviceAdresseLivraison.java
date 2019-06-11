@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.TpEVenteBack.metier.AdresseLivraison;
 
-public interface InterfaceAdresseLivraison {
+public interface IserviceAdresseLivraison {
 	
 	public AdresseLivraison saveAdresseLivraison( AdresseLivraison adl);
 	public List< AdresseLivraison> listAdresseLivraisons();

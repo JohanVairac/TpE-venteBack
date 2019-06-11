@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.TpEVenteBack.metier.AdresseFacturation;
 
-public interface InterfaceAdresseFacturation {
+public interface IserviceAdresseFacturation {
 	
 	public AdresseFacturation saveAdresseFacturation( AdresseFacturation adf);
 	public List< AdresseFacturation> listAdresseFacturations();

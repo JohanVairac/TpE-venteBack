@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.TpEVenteBack.metier.Produit;
 
-public interface InterfaceProduit {
+public interface IserviceProduit {
 	
 	public Produit saveProduit(Produit p);
 	public List< Produit> listProduits();

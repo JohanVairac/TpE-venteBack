@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.TpEVenteBack.metier.MoyenDePaiment;
 
-public interface InterfaceMoyenDePaiment {
+public interface IserviceMoyenDePaiment {
 	
 	public MoyenDePaiment saveMoyenDePaiment(MoyenDePaiment moy);
 	public List< MoyenDePaiment> listMoyenDePaiments();

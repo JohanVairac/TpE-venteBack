@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.TpEVenteBack.metier.Commande;
 
-public interface InterfaceCommande {
+public interface IserviceCommande {
 	
 	public Commande saveCommande( Commande com);
 	public List< Commande> listCommandes();
