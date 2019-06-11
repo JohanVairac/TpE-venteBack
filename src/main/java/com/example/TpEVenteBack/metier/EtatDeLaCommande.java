@@ -23,6 +23,13 @@ public class EtatDeLaCommande {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long idEtatCommande;
+	public EtatDeLaCommande(Date dateCommande, String etatCommande) {
+		super();
+		this.dateCommande = dateCommande;
+		EtatCommande = etatCommande;
+	}
+
+
 	private Date dateCommande =new Date();
 	private String EtatCommande;
 
