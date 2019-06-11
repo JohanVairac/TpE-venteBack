@@ -56,7 +56,7 @@ public class Produit implements Serializable{
 	@XmlTransient
 	@ToString.Exclude
 	@OneToMany(mappedBy="produit")
-	private List<Promotion> promotions =new ArrayList<Promotion>();
+	 private List<Promotion> promotions =new ArrayList<Promotion>();
 	
 	
 	@JsonIgnore

@@ -1,6 +1,6 @@
 package com.example.TpEVenteBack.metier;
 
-import java.io.Serializable;
+ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

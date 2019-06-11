@@ -30,7 +30,7 @@ public class AdresseFacturation extends Adresse implements Serializable {
 	public AdresseFacturation(@NotNull String numRue, @NotNull String nomRue, @NotNull String codePostal,
 			@NotNull String pays, Date dateFacturation) {
 		super(numRue, nomRue, codePostal, pays);
-		this.dateFacturation = dateFacturation;
+		 this.dateFacturation = dateFacturation;
 	}
 
 
