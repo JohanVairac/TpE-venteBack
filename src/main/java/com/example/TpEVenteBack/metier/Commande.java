@@ -36,7 +36,7 @@ public class Commande implements Serializable {
 	
 public Commande(Date dateCommande, String etatCommande) {
 		super();
-		this.dateCommande = dateCommande;
+		 this.dateCommande = dateCommande;
 		this.etatCommande = etatCommande;
 	}
 

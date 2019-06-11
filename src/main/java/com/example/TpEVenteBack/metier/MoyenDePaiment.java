@@ -22,7 +22,7 @@ import lombok.NonNull;
 public class MoyenDePaiment {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long idPaiment;
+	 private long idPaiment;
 	private String modePaiment;
 	
 	@ManyToOne
