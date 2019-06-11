@@ -27,7 +27,7 @@ public class Promotion implements Serializable{
 	private long idPromo;
 	private Date dateDebutPromo;
 	private Date dateFinPromo;
-	private double prixPromo;
+	 private double prixPromo;
 	
 	@XmlTransient
 	@ManyToOne
