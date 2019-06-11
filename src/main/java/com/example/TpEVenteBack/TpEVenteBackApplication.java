@@ -41,7 +41,7 @@ public class TpEVenteBackApplication {
 //		dao.save(new Commande(0,df.parse("1992-09-12"), "retournée", null, null, null));
 //		dao.save(new Commande(0,df.parse("1963-05-23"), "préparée", null, null, null));
 //		dao.save(new Commande(0,df.parse("1995-10-17"), "préparée", null, null, null));
-		dao.save(new Administrateur("Wassim","Saadawi",36,1532555));
+		//dao.save(new Administrateur("Wassim","Saadawi",36,1532555));
 	
 	}
 
