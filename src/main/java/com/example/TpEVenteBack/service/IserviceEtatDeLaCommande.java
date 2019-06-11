@@ -14,6 +14,7 @@ public interface IserviceEtatDeLaCommande {
 	public List< EtatDeLaCommande> listEtatDeLaCommandes();
 	public  EtatDeLaCommande getEtatDeLaCommande(Long idEtatCommande);
 	public boolean deleteEtatDeLaCommande (Long idEtatCommande);
+	
 	public EtatDeLaCommande updateEtatDeLaCommande(Long idEtatCommande,  EtatDeLaCommande etat);
 
 }

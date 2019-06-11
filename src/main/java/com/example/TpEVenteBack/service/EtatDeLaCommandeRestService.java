@@ -49,6 +49,7 @@ public class EtatDeLaCommandeRestService implements IserviceEtatDeLaCommande {
 	public EtatDeLaCommande updateEtatDeLaCommande(@PathVariable Long idEtatCommande,@RequestBody EtatDeLaCommande etat) {
 		// TODO Auto-generated method stub
 		etat.setIdEtatCommande(idEtatCommande);
+		
 		return etatDeLaCommandeRepository.save(etat);
 	}
 

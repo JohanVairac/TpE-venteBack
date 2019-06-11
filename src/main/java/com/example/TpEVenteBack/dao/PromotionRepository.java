@@ -6,6 +6,8 @@ import com.example.TpEVenteBack.metier.Promotion;
 
 
 
+
+
 public interface PromotionRepository extends JpaRepository< Promotion,Long> {
 
 }
