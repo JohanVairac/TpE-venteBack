@@ -28,7 +28,7 @@ public class ClientRestService implements IserviceClient {
 		// TODO Auto-generated method stub
 		return clientRepository.save(c);
 	}
-	@RequestMapping(value="/Clients", method=RequestMethod.GET)
+	@RequestMapping(value="/clients", method=RequestMethod.GET)
 	@Override
 	public List<Client> listClients() {
 		// TODO Auto-generated method stub
