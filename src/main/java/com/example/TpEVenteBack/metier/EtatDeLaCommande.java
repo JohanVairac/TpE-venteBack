@@ -27,7 +27,7 @@ public class EtatDeLaCommande {
 	private String EtatCommande;
 
 	
-	@XmlTransient
+	 @XmlTransient
 	@ManyToOne
 	private Commande commande;
 }

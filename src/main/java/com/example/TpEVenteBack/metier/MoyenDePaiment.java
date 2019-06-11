@@ -27,6 +27,6 @@ public class MoyenDePaiment {
 	
 	@ManyToOne
 	@XmlTransient
-	private Personne personne;
+	 private Personne personne;
 
 }

@@ -27,6 +27,6 @@ public class ProduitCommandeId implements Serializable{
 	private Produit produit;
 	@ManyToOne
 	@JoinColumn(name = "Commande_Id")
-	private Commande commande;
+	 private Commande commande;
 
 }

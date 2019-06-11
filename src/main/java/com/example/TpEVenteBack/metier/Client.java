@@ -31,7 +31,7 @@ public class Client extends Personne implements Serializable {
 		this.email = email;
 		this.mdp = mdp;
 	}
-	private String email;
+	 private String email;
 	private String mdp;
 
 	@JsonIgnore

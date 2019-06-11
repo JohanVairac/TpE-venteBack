@@ -42,7 +42,7 @@ private Personne personne;
 @XmlTransient
 @ToString.Exclude
 @ManyToMany(mappedBy = "commandes")
-private List<Produit> produits=new ArrayList<Produit>();
+ private List<Produit> produits=new ArrayList<Produit>();
 
 
 @JsonIgnore

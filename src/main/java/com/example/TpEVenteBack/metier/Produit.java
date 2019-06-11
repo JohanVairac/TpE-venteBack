@@ -39,19 +39,13 @@ public class Produit implements Serializable{
 	private Catalogue catalogue;
 	
 	
-	@JsonIgnore
+	 @JsonIgnore
 	@XmlTransient
 	@ToString.Exclude
 	@ManyToMany
 	private List<Commande>commandes=new ArrayList<Commande>();
 	
-	@JsonIgnore
-	@XmlTransient
-	@ToString.Exclude
-	@ManyToMany
-	private List<Adresse> adresses=new ArrayList<Adresse>();
 	
-
 	@JsonIgnore
 	@XmlTransient
 	@ToString.Exclude

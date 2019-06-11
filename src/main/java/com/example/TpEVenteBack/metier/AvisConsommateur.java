@@ -21,7 +21,7 @@ public class AvisConsommateur {
 	  private AvisConsommateurId id;
 		//declarartion des attributs qui feront partie de la table de jointure
 	private String commentaires;
-	public AvisConsommateur (String commentaires) {
+	 public AvisConsommateur (String commentaires) {
 		super();
 		this.commentaires = commentaires;
 	}

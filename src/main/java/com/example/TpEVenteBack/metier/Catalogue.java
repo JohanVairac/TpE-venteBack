@@ -28,5 +28,5 @@ public class Catalogue implements Serializable {
 	private String nomCatalogue;
 
 	@OneToMany(mappedBy="catalogue")
-	private List<Produit> produits= new ArrayList<Produit>();
+	 private List<Produit> produits= new ArrayList<Produit>();
 }
