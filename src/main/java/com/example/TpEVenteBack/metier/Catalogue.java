@@ -9,12 +9,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.xml.bind.annotation.XmlTransient;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,6 +30,16 @@ public class Catalogue implements Serializable {
 	private long idCatalogue;
 	private String nomCatalogue;
 
+	
+	@JsonIgnore
+	@XmlTransient
+	@ToString.Exclude
 	@OneToMany(mappedBy="catalogue")
 	 private List<Produit> produits= new ArrayList<Produit>();
+
+
+	public Catalogue(String nomCatalogue) {
+		super();
+		this.nomCatalogue = nomCatalogue;
+	}
 }

@@ -34,6 +34,13 @@ public class Commande implements Serializable {
 	private Date dateCommande;
 	private String etatCommande;
 	
+public Commande(Date dateCommande, String etatCommande) {
+		super();
+		this.dateCommande = dateCommande;
+		this.etatCommande = etatCommande;
+	}
+
+
 @XmlTransient
 @ManyToOne
 private Personne personne;
