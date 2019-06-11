@@ -36,7 +36,7 @@ public class Produit implements Serializable{
 
 	@XmlTransient
 	@ManyToOne
-	private Catalogue catalogue;
+	 private Catalogue catalogue;
 	
 	
 	 @JsonIgnore
