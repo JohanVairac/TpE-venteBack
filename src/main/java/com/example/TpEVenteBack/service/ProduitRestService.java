@@ -52,6 +52,7 @@ public class ProduitRestService implements IserviceProduit {
 		p.setIdProduit(idProduit);
 		return produitRepository.save(p);
 	}
+	@RequestMapping(value= "/produits/{idProduit}/{idCatalogue}",method=RequestMethod.PUT)
 	@Override
 	public void attribuerCategorie(@PathVariable Long idProduit, @PathVariable Long idCatalogue) {
 		// TODO Auto-generated method stub
