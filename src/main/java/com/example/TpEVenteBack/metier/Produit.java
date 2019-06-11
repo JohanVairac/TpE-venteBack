@@ -46,7 +46,7 @@ public class Produit implements Serializable{
 	private List<Commande>commandes=new ArrayList<Commande>();
 	
 	
-	@JsonIgnore
+     	@JsonIgnore
 	@XmlTransient
 	@ToString.Exclude
 	@OneToMany(mappedBy="produit")
