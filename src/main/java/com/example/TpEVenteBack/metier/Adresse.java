@@ -33,7 +33,7 @@ import lombok.ToString;
 @DiscriminatorColumn(name="TYPE_AdRES")
 @DiscriminatorValue("ADRES")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public abstract class Adresse implements Serializable {
+ public abstract class Adresse implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 private long idAdresse;

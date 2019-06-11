@@ -1,4 +1,4 @@
-package com.example.TpEVenteBack.metier;
+  package com.example.TpEVenteBack.metier;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -30,29 +30,23 @@ public class Produit implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	 private long idProduit;
-	private String nomProduit;
+	private  String nomProduit;
 	private int quantite;
 	private double prix;
 
 	@XmlTransient
 	@ManyToOne
-	private Catalogue catalogue;
+	 private Catalogue catalogue;
 	
 	
-	@JsonIgnore
+	 @JsonIgnore
 	@XmlTransient
 	@ToString.Exclude
 	@ManyToMany
 	private List<Commande>commandes=new ArrayList<Commande>();
 	
-	@JsonIgnore
-	@XmlTransient
-	@ToString.Exclude
-	@ManyToMany
-	private List<Adresse> adresses=new ArrayList<Adresse>();
 	
-
-	@JsonIgnore
+     	@JsonIgnore
 	@XmlTransient
 	@ToString.Exclude
 	@OneToMany(mappedBy="produit")

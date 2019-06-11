@@ -16,12 +16,12 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AvisConsommateur {
-	private static final long serialVersionUID = 1L;
+	 private static final long serialVersionUID = 1L;
 	@EmbeddedId//cle embarquee
 	  private AvisConsommateurId id;
 		//declarartion des attributs qui feront partie de la table de jointure
 	private String commentaires;
-	public AvisConsommateur (String commentaires) {
+	 public AvisConsommateur (String commentaires) {
 		super();
 		this.commentaires = commentaires;
 	}

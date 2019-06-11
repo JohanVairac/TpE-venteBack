@@ -31,6 +31,6 @@ public class Promotion implements Serializable{
 	
 	@XmlTransient
 	@ManyToOne
-	private Produit produit;
+	 private Produit produit;
 
 }

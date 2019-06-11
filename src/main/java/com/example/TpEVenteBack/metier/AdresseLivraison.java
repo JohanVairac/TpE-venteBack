@@ -23,7 +23,7 @@ import lombok.ToString;
 public class AdresseLivraison extends Adresse implements Serializable {
 private Date dateLivraison;
 
-public AdresseLivraison(@NotNull String numRue, @NotNull String nomRue, @NotNull String codePostal,
+ public AdresseLivraison(@NotNull String numRue, @NotNull String nomRue, @NotNull String codePostal,
 		@NotNull String pays, Date dateLivraison) {
 	super(numRue, nomRue, codePostal, pays);
 	this.dateLivraison = dateLivraison;

@@ -26,7 +26,7 @@ public class ProduitCommande implements Serializable {
   private Date dateCommande;
 public ProduitCommande (Date dateCommande) {
 	super();
-	this.dateCommande = dateCommande;
+	 this.dateCommande = dateCommande;
 }
   
 

@@ -18,10 +18,10 @@ import lombok.Setter;
 @EqualsAndHashCode
 public class AvisConsommateurId  implements Serializable{
 	
-	public Produit getProduit() {
+	 public Produit getProduit() {
 	      return produit;
 	 }
-	 public Client getClient() {
+	  public Client getClient() {
 			return client;
 	 }
 	 @ManyToOne

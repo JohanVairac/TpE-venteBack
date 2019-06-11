@@ -26,12 +26,12 @@ import lombok.ToString;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @ToString(callSuper=true)
 public class Client extends Personne implements Serializable {
-	public Client(@NonNull String nom, @NonNull String prenom, int age, String email, String mdp) {
+	 public Client(@NonNull String nom, @NonNull String prenom, int age, String email, String mdp) {
 	 super(nom, prenom, age);
 		this.email = email;
 		this.mdp = mdp;
 	}
-	private String email;
+	 private String email;
 	private String mdp;
 
 	@JsonIgnore

@@ -43,7 +43,7 @@ public abstract class Personne implements Serializable{
 	private  @NonNull  String prenom;
 	private int age;
 	
-	@JsonIgnore
+	 @JsonIgnore
 	@XmlTransient
 	@OneToMany(mappedBy = "personne")
 	private List <MoyenDePaiment> moyensdepaiment=new ArrayList<MoyenDePaiment>();
