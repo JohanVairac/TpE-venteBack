@@ -24,11 +24,17 @@ public class ProduitCommande implements Serializable {
   private ProduitCommandeId id;
 	//declarartion des attributs qui feront partie de la table de jointure
   private Date dateCommande;
-public ProduitCommande (Date dateCommande) {
+  private int nbreProduit;
+public ProduitCommande(Date dateCommande, int nbreProduit) {
 	super();
-	 this.dateCommande = dateCommande;
+	this.dateCommande = dateCommande;
+	this.nbreProduit = nbreProduit;
+
+ 	 
+
+	 
+}
 }
   
 
 
-}
