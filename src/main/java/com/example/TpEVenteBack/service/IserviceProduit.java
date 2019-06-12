@@ -15,6 +15,8 @@ public interface IserviceProduit {
 	public Produit updateProduit(Long idProduit,  Produit p);
 	
 	public void attribuerCategorie( Long idProduit,  Long idCatalogue);
+	
+	public List<Produit> produitCatalogue(long idCatalogue);
 
 
 }

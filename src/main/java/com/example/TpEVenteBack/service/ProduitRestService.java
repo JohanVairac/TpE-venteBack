@@ -61,5 +61,13 @@ public class ProduitRestService implements IserviceProduit {
 		produitRepository.attribuerCategorie(idProduit, idCatalogue);
 		
 	}
+	@RequestMapping(value = "/produitsCatalogue/{idCatalogue}",method = RequestMethod.GET)
+	@Override
+	public List<Produit> produitCatalogue(@PathVariable long idCatalogue) {
+		// TODO Auto-generated method stub
+		return produitRepository.produitCatalogue(idCatalogue);
+	}
+	
+	
 
 }

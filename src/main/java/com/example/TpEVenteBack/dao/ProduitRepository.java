@@ -1,5 +1,7 @@
 package com.example.TpEVenteBack.dao;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,5 +17,9 @@ public interface ProduitRepository extends JpaRepository<Produit, Long>{
 	@Transactional
 	@Query("update Produit p SET p.catalogue.idCatalogue = :x where p.idProduit = :y")
 	public void attribuerCategorie(@Param("y") long idProduit, @Param("x") long idCatalogue);
+	
+	
+	@Query("select p from Produit p where p.catalogue.idCatalogue like :x")
+	public List<Produit> produitCatalogue(@Param("x")long idCatalogue);
 
 }
