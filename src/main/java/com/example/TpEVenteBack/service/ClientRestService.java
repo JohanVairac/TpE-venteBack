@@ -52,3 +52,4 @@ public class ClientRestService implements IserviceClient {
 		return clientRepository.save(c);
 
 }
+}
