@@ -51,5 +51,11 @@ public class PromotionRestService implements IservicePromotion {
 		promo.setIdPromo(idPromo);
 		return promotionRepository.save(promo);
 	}
+	
+	@RequestMapping(value= "/promotions/{idPromo}/{idProduit}",method=RequestMethod.PUT)
+	@Override
+	public void attribuerProduit(@PathVariable Long idPromo,@PathVariable  Long idProduit) {
+		promotionRepository.attribuerProduit(idPromo, idProduit);
+	}
 
 }

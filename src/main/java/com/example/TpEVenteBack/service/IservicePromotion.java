@@ -16,5 +16,7 @@ public interface IservicePromotion {
 	
 
 	public Promotion updatePromotion(Long idPromo, Promotion promo);
+	
+	public void attribuerProduit( Long idPromo,  Long idProduit);
 
 }

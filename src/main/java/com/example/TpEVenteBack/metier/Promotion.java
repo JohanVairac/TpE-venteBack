@@ -9,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlTransient;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -25,7 +27,9 @@ public class Promotion implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long idPromo;
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateDebutPromo;
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateFinPromo;
 	 private double prixPromo;
 	
