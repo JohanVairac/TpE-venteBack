@@ -33,6 +33,7 @@ public class Produit implements Serializable{
 	private  String nomProduit;
 	private int quantite;
 	private double prix;
+	private String imageUrl;
 
 	@XmlTransient
 	@ManyToOne
@@ -46,7 +47,7 @@ public class Produit implements Serializable{
 	private List<Commande>commandes=new ArrayList<Commande>();
 	
 	
-     	@JsonIgnore
+      	@JsonIgnore
 	@XmlTransient
 	@ToString.Exclude
 	@OneToMany(mappedBy="produit")
