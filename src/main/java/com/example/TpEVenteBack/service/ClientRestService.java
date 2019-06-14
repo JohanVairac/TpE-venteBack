@@ -25,7 +25,6 @@ public class ClientRestService implements IserviceClient {
 	@RequestMapping (value="clients", method=RequestMethod.POST)
 	@Override
 	public Client saveClient(@RequestBody Client c) {
-		// TODO Auto-generated method stub
 		return clientRepository.save(c);
 	}
 	@RequestMapping(value="/clients", method=RequestMethod.GET)

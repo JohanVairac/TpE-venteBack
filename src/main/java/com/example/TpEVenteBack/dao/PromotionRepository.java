@@ -17,6 +17,11 @@ public interface PromotionRepository extends JpaRepository< Promotion,Long> {
 	@Query("update Promotion p SET p.produit.idProduit = :x where p.idPromo= :y")
 	public void attribuerProduit(@Param("y") long idPromo, @Param("x") long idProduit);
 	
+//	@Modifying(clearAutomatically = true)// forcer la mise à jour de bdd
+//	@Transactional
+//	@Query("select p.*, prod.nomProduit from Promotion p inner join Produit prod on prod.idProduit = p.produit.idProduit")
+//	public void GetAllPromotions();
+	
 
 
 

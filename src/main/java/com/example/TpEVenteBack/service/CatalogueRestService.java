@@ -22,7 +22,6 @@ public class CatalogueRestService implements IserviceCtalogue {
 	@RequestMapping (value="catalogues", method=RequestMethod.POST)
 	@Override
 	public Catalogue saveCatalogue(@RequestBody Catalogue c) {
-		// TODO Auto-generated method stub
 		return catalogueRepository.save(c);
 	}
 	@RequestMapping(value="/catalogues", method=RequestMethod.GET)

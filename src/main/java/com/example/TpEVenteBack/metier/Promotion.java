@@ -31,6 +31,8 @@ public class Promotion implements Serializable{
 	private Date dateDebutPromo;
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateFinPromo;
+	
+	
 	 private double prixPromo;
 	
 	@XmlTransient

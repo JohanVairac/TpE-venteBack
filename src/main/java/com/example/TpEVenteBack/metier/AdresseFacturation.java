@@ -9,11 +9,10 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.ToString;
 
 
@@ -31,6 +30,7 @@ public class AdresseFacturation extends Adresse implements Serializable {
 			@NotNull String pays, Date dateFacturation) {
 		super(numRue, nomRue, codePostal, pays);
 		 this.dateFacturation = dateFacturation;
+		 
 	}
 
 

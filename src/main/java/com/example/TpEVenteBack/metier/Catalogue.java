@@ -31,7 +31,7 @@ public class Catalogue implements Serializable {
 	private String nomCatalogue;
 
 	
-	@JsonIgnore
+	@JsonIgnore         
 	@XmlTransient
 	@ToString.Exclude
 	@OneToMany(mappedBy="catalogue")
@@ -42,4 +42,6 @@ public class Catalogue implements Serializable {
 		super();
 		this.nomCatalogue = nomCatalogue;
 	}
+
+
 }
