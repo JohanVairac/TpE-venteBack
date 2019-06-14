@@ -51,7 +51,7 @@ public class ClientRestService implements IserviceClient {
 	@Override
 	public Client updateClient(@PathVariable Long idPersonne, @RequestBody Client c) {
 		c.setIdPersonne(idPersonne);
-		return clientRepository.save(c);
+		return clientRepository.save(c); 
 	}
 
 }
